@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --indigo-primary: hsl(245, 75%, 52%);
+  --blue-mist: hsl(225, 100%, 98%);
+  --slate-gray: hsl(224, 23%, 55%);
+  --midnight-blue: hsl(223, 47%, 23%);
+}
+
+img{
+  display: block;
+  width: 100%;
+}
+
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  background: var(--blue-mist) url(images/pattern-background-desktop.svg)
+    no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 375px;
+  min-height: 500px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+  color: var(--midnight-blue);
+}
+
+p.about {
+  font-size: 15px;
+  margin: 15px 0;
+  color: var(--slate-gray);
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.annual-plan {
+  background-color: var(--blue-mist);
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.annual-plan img {
+  width: 40px;
+}
+
+.annual-plan-left {
+  display: flex;
+  gap: 15px;
+}
+
+.plan-type {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--midnight-blue);
+}
+
+.price {
+  color: var(--slate-gray);
+}
+
+.annual-plan-right a {
+  color: var(--indigo-primary);
+  font-weight: 800;
+}
+
+.annual-plan-right a:hover {
+  color: hsl(245, 63%, 63%);
+}
+
+button {
+  display: inline-block;
+  background-color: var(--indigo-primary);
+  color: #fff;
+  width: 300px;
+  font-weight: 700;
+  padding: 12px 0;
+  border: none;
+  margin-top: 25px;
+  border-radius: 10px;
+  transition: background-color ease;
+}
+
+button:hover {
+  background-color: hsl(245, 63%, 63%);
+}
+
+.cancel {
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--slate-gray);
+  transition: color ease;
+}
+
+.cancel:hover {
+  color: var(--midnight-blue);
+}
+
